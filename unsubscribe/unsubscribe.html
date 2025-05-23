@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Descadastro de E-mails</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 2em;
+        background: #f4f4f4;
+      }
+      .container {
+        background: white;
+        padding: 2em;
+        max-width: 400px;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ccc;
+      }
+      input,
+      button {
+        width: 100%;
+        padding: 0.8em;
+        margin-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Descadastrar e-mail</h2>
+      <p>Digite seu e-mail para não receber mais mensagens.</p>
+      <form action="https://formspree.io/f/mkgraedo" method="POST">
+        <input
+          type="email"
+          name="email"
+          placeholder="seuemail@exemplo.com"
+          required
+        />
+        <button type="submit">Descadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>
